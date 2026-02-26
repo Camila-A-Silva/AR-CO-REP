@@ -1,0 +1,11 @@
+EMMET 
+. --> Criar uma classe
+# --> Criar um ID
+$ --> Dados de variáveis
+> --> Criar um filho (elemento) 
+{} --> Escrever um texto no elemento
+[] --> Incluir atributos no elemento 
++ --> Criar outro elemento filho no mesme nível
+* --> Criar vários elementos
+() --> Envelopar os comandos do Emmet
+
