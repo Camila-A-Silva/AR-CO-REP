@@ -10,9 +10,17 @@ function criarBotaoVoltar(){
     btnVoltar.style.marginTop = '20px'
 
     // 3. Lógica do click
-    btnVoltar.addEventListener('click', function(){
+
+    function navegar(){
         window.location.href = '../index.html'
-    });
+    };
+
+    btnVoltar.addEventListener('click', navegar);
+
+
+    // btnVoltar.addEventListener('click', function(){
+    //     window.location.href = '../index.html'
+    // });
 
     // 4. Adicionar obotão no final do body
     // appenChilg coloca o botão no final

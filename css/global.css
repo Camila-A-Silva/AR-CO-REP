@@ -1,9 +1,10 @@
 /* Variáveis do Design System */
+/* fffd7c */
 :root {
-    --primary-color: #6366f1;
-    --primaty-hover: #4f46e5;
-    --bg-color: #f8fafc;
-    --text-color: #1e293b;
+    --primary-color: #b994fd;
+    --primaty-hover: #a87afd;
+    --bg-color: #d9cbff;
+    --text-color: #8d4ada;
     --white: #ffffff;
     --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
     --radius: 8px;
@@ -19,7 +20,6 @@
 }
 
 body {
-    font-family: var(--font-main);
     background-color: var(--bg-color);
     color: var(--text-color);
     display: flex;
@@ -34,7 +34,7 @@ body {
 .project__header h1 {
     font-size: 2.5rem;
     margin-bottom: 2rem;
-    color: var(--primary-color);
+    color: var(--text-color);
 }
 
 /* Estilização dos Botões (Inputs e Botão Dinâmico */
@@ -48,6 +48,7 @@ button {
     font-size: 1rem;
     /* E o peso da fonte ( o tanto que ela vai se destacar) */
     font-weight: 600;
+    font-family: var(--font-main);
     border-radius: var(--radius);
     cursor: pointer;
     box-sizing: var(--shadow);
