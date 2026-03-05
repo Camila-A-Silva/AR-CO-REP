@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f2f5; /* Fundo neutro para destacar o card */
+}
+
+/* Container Principal */
+.calculator {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 400px; /* Melhor que vw para responsividade */
+    padding: 2rem;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.calculator_header {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.calculator__title {
+    color: #D1495B;
+    font-size: 1.8rem;
+}
+
+/* Formulário */
+.calculator__form-group {
+    margin-bottom: 1.2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.calculator__label {
+    margin-bottom: 0.5rem;
+    color: #555;
+    font-weight: 600;
+}
+
+.calculator__input {
+    padding: 12px;
+    border: 2px solid #FFE8CC;
+    border-radius: 8px;
+    background-color: #fffaf0;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.calculator__input:focus {
+    border-color: #F77F00;
+}
+
+/* Botões */
+.calculator__buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 1rem;
+}
+
+.calculator__button {
+    flex: 1;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    color: white;
+    transition: transform 0.1s, background-color 0.3s;
+}
+
+.calculator__button:active {
+    transform: scale(0.98);
+}
+
+.calculator__button--calculate {
+    background-color: #FFB703;
+}
+
+.calculator__button--calculate:hover {
+    background-color: #F77F00;
+}
+
+.calculator__button--clear {
+    background-color: #D62828;
+}
+
+.calculator__button--clear:hover {
+    background-color: #9D0208;
+}
+
+/* Seção de Resultado */
+.calculator__result-section {
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    border-top: 2px dashed #eee;
+    text-align: center;
+}
+
+.calculator__result-title {
+    color: #D1495B;
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.calculator__result-text {
+    color: #2D6A4F;
+    font-weight: 500;
+    line-height: 1.4;
+}

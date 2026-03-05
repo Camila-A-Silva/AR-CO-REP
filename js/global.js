@@ -1,25 +1,45 @@
-// 1. Seleção de elementos (serãp nll se não estiverem na página)
+// Função que está criando o botão Voltar na página
+const criarBotaoVoltar = () => {
+    const btnVoltar=  document.createElement('button');
+
+    btnVoltar.innerText='Voltar';
+    btnVoltar.style.marginTop='20px';
+    
+    function navegar(){
+        window.location.href = '../index.html'
+    };
+
+    btnVoltar.addEventListener('click',navegar)
+
+    document.body.appendChild(btnVoltar);
+};
+
+
 const btnP1 = document.querySelector('#inputP1');
 const btnP2 = document.querySelector('#inputP2');
 const btnP3 = document.querySelector('#inputP3');
 
-// 2.Definição das funções
-// const verificaBotao = () => {
-    
-// }
 
+// Lógica de execução (o "cérebro" do script)
+// Se o btnP1 existe, estamos no Index
+if (btnP1){
 
+    btnP1.addEventListener('click', () => {
+        window.location.href='./pages/projeto01.html'}
+    );
 
-// 2. Método addEventListener com ma função anônima
-//  função de click para chamar a página projeto01 no index
-btnP1.addEventListener('click',function(){
-    window.location.href = './pages/projeto01.html'
-});
+    btnP2.addEventListener('click',  () =>{
+        window.location.href='./pages/projeto02.html'}
+    );
 
-btnP2.addEventListener('click',function(){
-    window.location.href = './pages/projeto02.html'
-});
+    btnP3.addEventListener('click', () =>{
+        window.location.href='./pages/projeto03.html'}
+    );
 
-btnP3.addEventListener('click',function(){
-    window.location.href = './pages/projeto03.html'
-});
+//Se não existe, assume-se que estamos na página prjeto 
+// Usando o método addEventListener (escuta, aconteceu oq ele estava esperando, ele dispara a função) em vez da propriedade onload
+} else {
+    window.addEventListener('load', () => {
+        criarBotaoVoltar();
+    });
+}
